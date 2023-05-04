@@ -78,4 +78,6 @@ class CartController extends AbstractController
         $cart->remove();
         return $this->redirectToRoute('product');
     }
+
+    
 }

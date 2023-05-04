@@ -50,7 +50,7 @@
 </table>
 <a class="mb-3 d-block" href="{{ path('product') }}">Continuez mes achats</a>
 {% if totalQuantity > 0 %}
-        <a href="#"title="Valider puis passer au paiement" class="btn btn-outline-success btn-block"></i> Valider mon panier</a>
+        <a href="{{ path('remove_cart') }}{{ path('add_to_account'), {}}}"title="Valider puis passer au paiement" class="btn btn-outline-success btn-block"></i> Valider mon panier</a>
 {% else %}
         Votre panier est vide, remplissez le depuis la page <a href="{{ path('product') }}">produits</a>.
 {% endif %}
